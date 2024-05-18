@@ -28,3 +28,18 @@ const greterThanTwo = count1.filter( (count1, i, arr) => {
 })
 console.log(greterThanTwo);
 
+// 3. Reduce -- The reduce() method reduces an array of values down to just one value. 
+//              To get the output value, it runs a reducer function on each element of the array.
+
+//  accumulator - the returned value of the previous iteration
+// currentValue - the current item in the array
+// index - the index of the current item
+// array - the original array on which reduce was called 
+
+const count3 = [1, 2, 3, 4, 5, 6, 7]
+
+const sum = count3.reduce( (acc, curr, i, arr) => {
+    return acc + curr;
+},0)
+
+console.log(sum);
