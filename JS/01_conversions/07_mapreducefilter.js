@@ -22,7 +22,9 @@ console.log(threeMultipleCount);
 
 const count1 = [1, 2, 3, 4, 5]
 
-const greterThanTwo = count1.filter( (count, i, arr) => {
-    return count > 2
+const greterThanTwo = count1.filter( (count1, i, arr) => {
+    count1 =  count1 > 2
+    return count1
 })
 console.log(greterThanTwo);
+
