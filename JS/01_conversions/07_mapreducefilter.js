@@ -36,7 +36,7 @@ console.log(greterThanTwo);
 // index - the index of the current item
 // array - the original array on which reduce was called 
 
-const count3 = [1, 2, 3, 4, 5, 6, 7]
+const count3 = [1, 2, 3, 4, 5, 6, 7, 8]
 
 const sum = count3.reduce( (acc, curr, i, arr) => {
     return acc + curr;
