@@ -1,5 +1,6 @@
 // // Map, Filter, Reduce
 // //  Polyfill for Map, Filter, Re0duce
+// //  Map vs ForEach
 // // Practice on Arrays also in last
 
 // // 1. Map -- The map() method is used for creating a new array 
@@ -103,4 +104,21 @@
 
 // console.log(sum);
 
-// Practice on Arrays 
+// //////////////////////////////  Practice on Arrays   ////////////////////////////////////////////////
+
+// // Q1. what is diff btw Map and forEach
+// const sum = [10, 2, 3, 4, 5, 65]
+
+// const multiThree = sum.map((ar) => {
+//     ar = ar * 3
+//     return ar
+// })
+
+// const forEachResult = sum.forEach((ar, i) => {
+//     sum[i] = ar + 3
+// })
+
+// console.log(multiThree, forEachResult, sum);
+
+
+
