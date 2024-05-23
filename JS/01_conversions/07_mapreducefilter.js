@@ -121,4 +121,21 @@
 // console.log(multiThree, forEachResult, sum);
 
 
+// Q2. Give the names in capital letters
+let students = [
+    {name: "Ashish", rollNumber: 31, marks: 80},
+    {name: "Rohan", rollNumber: 25, marks: 50},
+    {name: "Dakshash", rollNumber: 11, marks: 45},
+    {name: "Piyush", rollNumber: 3, marks: 35},
+];
+// can be solve with FOR, forEach, Map
+// // with FOR loop
+// let info = [];
+// for(let i=0; i<students.length; i++){
+//     info.push(students[i].name.toUpperCase());
+// }
+// console.log(info);
 
+// with forEach loop
+const info = students.map((stu) => stu.name.toUpperCase());
+console.log(info);
