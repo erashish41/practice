@@ -121,13 +121,14 @@
 // console.log(multiThree, forEachResult, sum);
 
 
-// Q2. Give the names in capital letters
+// Q2. 
 let students = [
     {name: "Ashish", rollNumber: 31, marks: 80},
     {name: "Rohan", rollNumber: 25, marks: 50},
     {name: "Dakshash", rollNumber: 11, marks: 45},
     {name: "Piyush", rollNumber: 3, marks: 35},
 ];
+// 1a. Give the names in capital letters
 // can be solve with FOR, forEach, Map
 // // with FOR loop
 // let info = [];
@@ -136,6 +137,22 @@ let students = [
 // }
 // console.log(info);
 
-// with forEach loop
-const info = students.map((stu) => stu.name.toUpperCase());
-console.log(info);
+// // with forEach loop
+// const info = students.map((stu) => stu.name.toUpperCase());
+// console.log(info);
+
+// //2b. give the detail of students who have marks more than 60
+// const details = students.filter((cb) => cb.marks > 60)
+// console.log(details);
+
+// // 3c. give the name of students who have marks more than 10 and roll no. greater than 15
+// const details = students.filter((cb) => cb.marks > 10  && cb.rollNumber > 15)
+// console.log(details);
+
+// // 4d. sum of marks of all students
+// const sum = students.reduce((acc, curr) => acc + curr.marks, 0)
+// console.log(sum);
+
+// 5e. give the ONLY name of students who have marks more than 60
+const naam = students.filter((na) => na.marks).map((na) => na.name)
+console.log(naam);
