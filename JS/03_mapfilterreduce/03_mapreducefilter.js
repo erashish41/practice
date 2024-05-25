@@ -153,6 +153,6 @@ let students = [
 // const sum = students.reduce((acc, curr) => acc + curr.marks, 0)
 // console.log(sum);
 
-// 5e. give the ONLY name of students who have marks more than 60
+// 5e. give the ONLY name of students who have marks more than 60           2 functions are used
 const naam = students.filter((na) => na.marks).map((na) => na.name)
 console.log(naam);
