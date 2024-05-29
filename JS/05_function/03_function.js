@@ -14,7 +14,7 @@ function square2(mul){
     return mul * mul
 }
 
-function doubleSq (nu) {
-    console.log( "square is" + nu(4));
+function doubleSq (fn) {
+    console.log( "square is" + fn(4));
 }
 console.log(square2);
