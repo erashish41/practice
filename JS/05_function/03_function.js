@@ -47,10 +47,20 @@
 // // in Funciton the complete function is copied to scope of Hoisting
 // // in Variable of Hoisting the output will be undefined
 
-//  6. Params vs Arguments
-function ashish(boy){       // boy is params
-    console.log(boy * boy);
-}
-ashish(7);  // 7 is arguments
+// //  6. Params vs Arguments
+// function ashish(boy){       // boy is params
+//     console.log(boy * boy);
+// }
+// ashish(7);  // 7 is arguments
 
-//  7. Spread and operator
+// //  7. Spread and  Rest Operator    -- both operator should be in position of last.
+// function multi(...num1){
+//     console.log(num1[0]*num1[1]);
+// }
+// var arr = [ 2, 3];
+// multi (...arr);
+
+// 8. Callback function -- A callback function is a function passed into another function as an argument, which is then invoked inside the outer function
+// ex - setTimeout, Map, Filter, Reduce
+
+document.addEventListener("click", function(params) { })
