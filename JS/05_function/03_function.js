@@ -22,7 +22,35 @@
 // console.log(square2);
 
 
-// 4. What is IIFE  ?   ( ) ( )
-(function sqa (num){
-    console.log(num * num);
-}) (5)
+// // 4. What is IIFE(Immediately invoked function expressions)  ?   ( ) ( )
+// (function sqa (num){
+//     console.log(num * num);
+// }) (5)       // 25
+
+// // Ex of IIFE
+// (function (x){
+//     return (function(y){
+//         console.log(x);  // 1
+//     })(2)
+// })(1)
+
+// // 5. Function Hoisting -- it means to move the declaration of functions, variables, classes, 
+// //      or imports to the top of their scope, prior to execution of the code.
+
+// hello()
+// function hello(){
+//     console.log("kida");
+// }                  // kida
+
+// console.log(x);
+// var x = 5;        // undefined
+// // in Funciton the complete function is copied to scope of Hoisting
+// // in Variable of Hoisting the output will be undefined
+
+//  6. Params vs Arguments
+function ashish(boy){       // boy is params
+    console.log(boy * boy);
+}
+ashish(7);  // 7 is arguments
+
+//  7. Spread and operator
