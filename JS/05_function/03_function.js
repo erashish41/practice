@@ -16,7 +16,7 @@
 //     return mul * mul
 // }
 
-// function doubleSq (fn) {
+// function square2 (fn) {
 //     console.log( "square is" + fn(4));
 // }
 // console.log(square2);
@@ -65,9 +65,26 @@
 
 document.addEventListener("click", function(params) { })
 
-// 9. Arrow Function   
-function sum(num){
-    return num + num
-    
+// // 9. Arrow Function   
+// const add = (num1, num2) => { 
+//     return num1 + num2  
+// }
+// console.log(add (5,2));
+
+
+// function square2 (fn) {
+//     console.log( "square is" + fn(4));
+// }
+// console.log(square2);
+
+
+function sum(a){
+    return function (b){
+        return function(c){
+            return function (d){
+                return a + b + c + d;
+            }
+        }
+    }
 }
-console.log(sum(54));
+console.log(sum(1)(2)(3)(4));
