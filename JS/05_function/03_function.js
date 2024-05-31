@@ -64,3 +64,10 @@
 // ex - setTimeout, Map, Filter, Reduce
 
 document.addEventListener("click", function(params) { })
+
+// 9. Arrow Function   
+function sum(num){
+    return num + num
+    
+}
+console.log(sum(54));
