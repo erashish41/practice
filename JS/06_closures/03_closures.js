@@ -30,16 +30,39 @@
 
 // makeFun()(5);
 
-// 3. What is Closure Scope Chain   -- it have access to outer scope as well as scope of parent
+// // 3. What is Closure Scope Chain   -- it have access to outer scope as well as scope of parent
+// // global scope
+// var e = 20;
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             // outer scope
+//             return function(d){
+//                 // local scope
+//                 return a + b + c + d + e;
+//             }
+//         }
+//     }
+// }
+// console.log(add(2)(8)(52)(20));
 
-var e = 20;
-function add(a){
-    return function(b){
-        return function(c){
-            return function(d){
-                return a + b + c + d + e;
-            }
-        }
+// // 4. What is output ?
+// let count = 0;
+// (function printCount(){
+//     if(count === 0){        // outer scope
+//         let count = 1;      // inner scope
+//         console.log(count);
+//     }
+//     console.log(count);
+// })(1000);                   // output is 1 and 0
+
+// 5. write a function that allows to do this a
+var addSix = createBase(6);
+addSix(10);
+addSix(215);
+
+function createBase(num){
+    return function (innerFn){
+        console.log(num + innerFn);
     }
 }
-console.log(add(2)(8)(52)(20));
