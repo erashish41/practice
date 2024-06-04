@@ -57,7 +57,7 @@
 // })(1000);                   // output is 1 and 0
 
 // 5. write a function that allows to do this a
-var addSix = createBase(6);
+var addSix = createBase(8);
 addSix(10);
 addSix(215);
 
