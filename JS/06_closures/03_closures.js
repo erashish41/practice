@@ -56,13 +56,37 @@
 //     console.log(count);
 // })(1000);                   // output is 1 and 0
 
-// 5. write a function that allows to do this a
-var addSix = createBase(8);
-addSix(10);
-addSix(215);
 
-function createBase(num){
-    return function (innerFn){
-        console.log(num + innerFn);
+// 5. How would you use a closure to create a Private Counter ?
+// --- we are not directly manupulating counter we are using function to manupulate the value of counter 
+function counter () {
+    var _counter = 0;
+
+    function add(increment){
+        _counter += increment;
+    }
+    function retrive (){
+        return "counter = " + _counter;
+    }
+    return {
+        add,
+        retrive
     }
 }
+
+const c = counter ();
+c.add (5);
+c.add (10);
+
+console.log(c.retrive());
+
+// // 6. write a function that allows to do this a
+// var addSix = createBase(8);
+// addSix(10);
+// addSix(215);
+
+// function createBase(num){
+//     return function (innerFn){
+//         console.log(num + innerFn);
+//     }
+// }
