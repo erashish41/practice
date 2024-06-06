@@ -10,13 +10,26 @@
 // };
 // console.log(f(5)(6));
 
-// 2. Sum(2)(6)(5)
+// // 2. Sum(2)(6)(5)
+// function sum(a){
+//     return function (b){
+//         return function (c){
+//             return a+b+c;
+//         }
+//     }
+// }
+// console.log(sum(2)(6)(5));
 
-function sum(a){
-    return function (b){
-        return function (c){
-            return a+b+c;
+// 3. evalute("sum")(4)(2) => 6
+//  evalute("multiply")(4)(2) => 8
+//  evalute("divide")(4)(2) => 2
+//  evalute("subtract")(4)(2) => 2
+
+function evalute(operation){
+    return function (a){
+        return function (b){
+            if (operation === "sum") return a + b;
+            else if (operation === "mulitif") return a + b
         }
     }
 }
-console.log(sum(2)(6)(5));
