@@ -29,7 +29,14 @@ function evalute(operation){
     return function (a){
         return function (b){
             if (operation === "sum") return a + b;
-            else if (operation === "mulitif") return a + b
-        }
-    }
+            else if (operation === "divide") return a / b;
+            else if (operation === "substract") return a - b;
+            else if (operation === "mulitif") return a * b;
+            else return "Invalid Operation"
+        };
+    };
 }
+const mul = evalute("mulitply");
+
+console.log(mul(3)(5));
+console.log(mul(2)(6));
