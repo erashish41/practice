@@ -40,3 +40,26 @@
 
 // console.log(mul(3)(5));
 // console.log(mul(2)(6));
+
+// 4. Difference btw Currying and Partial Application
+function sum(a){
+    return function (b,c){
+        return a + b + c;
+    };
+}
+
+const x = sum(10);
+console.log(x(5,6));
+console.log(x(3,2));
+
+// or 
+console.log(sum(20)(1,4));
+
+function sum(a){
+    return function(b){
+        return function (c){
+            return a + b + c;
+        };
+    };
+};
+console.log(sum(20)(1, 4));
