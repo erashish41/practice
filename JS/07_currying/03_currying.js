@@ -20,23 +20,23 @@
 // }
 // console.log(sum(2)(6)(5));
 
-// 3. evalute("sum")(4)(2) => 6
-//  evalute("multiply")(4)(2) => 8
-//  evalute("divide")(4)(2) => 2
-//  evalute("subtract")(4)(2) => 2
+// // 3. evalute("sum")(4)(2) => 6
+// //  evalute("multiply")(4)(2) => 8
+// //  evalute("divide")(4)(2) => 2
+// //  evalute("subtract")(4)(2) => 2
 
-function evalute(operation){
-    return function (a){
-        return function (b){
-            if (operation === "sum") return a + b;
-            else if (operation === "divide") return a / b;
-            else if (operation === "substract") return a - b;
-            else if (operation === "mulitif") return a * b;
-            else return "Invalid Operation"
-        };
-    };
-}
-const mul = evalute("mulitply");
+// function evalute(operation){
+//     return function (a){
+//         return function (b){
+//             if (operation === "sum") return a + b;
+//             else if (operation === "divide") return a / b;
+//             else if (operation === "substract") return a - b;
+//             else if (operation === "mulitif") return a * b;
+//             else return "Invalid Operation"
+//         };
+//     };
+// }
+// const mul = evalute("mulitply");
 
-console.log(mul(3)(5));
-console.log(mul(2)(6));
+// console.log(mul(3)(5));
+// console.log(mul(2)(6));
