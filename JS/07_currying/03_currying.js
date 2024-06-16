@@ -48,7 +48,7 @@ function sum(a){
     };
 }
 
-const x = sum(10);
+const x = sum(15);
 console.log(x(5,6));
 console.log(x(3,2));
 
