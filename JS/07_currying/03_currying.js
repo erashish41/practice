@@ -1,6 +1,6 @@
 // Currying -- is a technique in functional programming where a function with multiple arguments
 //  is transformed into a sequence of functions, each taking a single argument. 
-// This technique allows for more flexibility and reusability of the code..
+// This technique allows for more flexibility and reusability of the code.
 
 // // 1. Example f(a, b) into f(a)(b)
 // function f(a){
@@ -62,8 +62,4 @@ function sum(a){
         };
     };
 };
-<<<<<<< HEAD
 console.log(sum(50)(1, 4));
-=======
-console.log(sum(20)(1, 4));
->>>>>>> origin/main
