@@ -62,4 +62,4 @@ function sum(a){
         };
     };
 };
-console.log(sum(20)(1, 4));
+console.log(sum(50)(1, 4));
