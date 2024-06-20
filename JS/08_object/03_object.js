@@ -1,9 +1,20 @@
-// Object in JS
-const property = "firstName";
-const naam = "Ashish Bhardwaj";
+// // Object in JS
+
+// const property = "firstName";
+// const naam = "Ashish Bhardwaj";
+
+// const user = {
+//     firstName : "Rajat Sharma",
+// };
+
+// console.log(user);
 
 const user = {
-    firstName : "Rajat Sharma",
+    naam : "Patandar",
+    age : 24,
+    isTotallyAwesome :  true,
 };
 
-console.log(user);
+for (key in user){
+    console.log(user[key]);
+}
