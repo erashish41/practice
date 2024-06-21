@@ -21,7 +21,7 @@
 // }
 
 
-// 1. what is output
+// 1. what is output of this data
 const data = {
     a : "one",
     b : "two",
