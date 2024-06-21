@@ -27,4 +27,4 @@ const data = {
     b : "two",
     a : "three",
 };
-console.log( data);  //keys with same name will replace the first key with second key
+console.log( data);  // keys with same name will replace the first key with second key
