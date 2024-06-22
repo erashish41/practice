@@ -28,3 +28,5 @@ const data = {
     a : "three",
 };
 console.log( data);  // keys with same name will replace the first key with second key
+
+// 2. 
