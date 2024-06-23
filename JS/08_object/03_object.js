@@ -40,7 +40,7 @@ multiplyByTwo(obj);
 
 function multiplyByTwo(obj) {
     for (key in obj) {
-     if (typeof obj[key] ===     "number") {
+     if (typeof obj[key] === "number") {
         obj[key] *= 2;
         }
     }
