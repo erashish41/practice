@@ -35,10 +35,9 @@ let nums = {
     b: 200,
     title: "My nums",
 };
+multiplyByTwo(nums);
 
-multiplyByTwo(obj);
-
-function multiplyByTwo(obj) {
+function multiplyByTwo(obj) {           // loop object can be done by (key in obj)
     for (key in obj) {
      if (typeof obj[key] === "number") {
         obj[key] *= 2;
