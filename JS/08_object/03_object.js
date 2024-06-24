@@ -47,12 +47,24 @@
 // console.log(nums);
 
 
-// 3. what is output of this data
-const a = {};
-const b = { key: "b"};
-const c = { key: "c"};
+// // 3. what is output of this data
+// const a = {};
+// const b = { key: "b"};
+// const c = { key: "c"};
 
-a[b] = 123;
-a[c] = 456;
+// a[b] = 123;
+// a[c] = 456;
+// // bcz it is assign as -- {[object Object]: 456} 
+// // both a[b] = 123; and a[c] = 456; overlaps each other and found object object
+// console.log(a[b]);
 
-console.log(a[b]);
+
+// 4. What is JSON.strigify and JSON.parse ?
+const user = {
+    naam: "Ashish",
+    age: 29,
+}
+
+const strObj = JSON.stringify(user);  // JSON.stringify will put all data in String form
+
+console.log(JSON.parse(strObj));    //JSON.parse will put all data from String to Object
