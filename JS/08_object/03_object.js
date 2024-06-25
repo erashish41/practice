@@ -65,6 +65,6 @@ const user = {
     age: 29,
 }
 
-const strObj = JSON.stringify(user);  // JSON.stringify will put all data in String form
+const strObj = JSON.stringify(user);    //  JSON.stringify will put all data in String form
 
-console.log(JSON.parse(strObj));    //JSON.parse will put all data from String to Object
+console.log(JSON.parse(strObj));        //  JSON.parse will put all data from String to Object
