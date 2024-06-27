@@ -68,3 +68,13 @@ const user = {
 const strObj = JSON.stringify(user);    //  JSON.stringify will put all data in String form
 
 console.log(JSON.parse(strObj));        //  JSON.parse will put all data from String to Object
+
+
+// 5. what is the output 
+const settings  = {
+    username: "Piyush",
+    level: 19,
+    health: 90,
+};
+var data = JSON.stringify(settings,["level", "health"]);
+console.log(data);
